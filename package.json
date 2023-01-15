@@ -1,0 +1,52 @@
+{
+  "name": "pkg-name",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "sideEffect": false,
+  "author": "left0ver",
+  "license": "MIT",
+  "homepage": "https://github.com/left0ver/pkg-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/left0ver/pkg-name.git"
+  },
+  "bugs": "https://github.com/left0ver/pkg-name/issues",
+  "keywords": [],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "esno src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "npx tsup src/index.ts --format cjs,esm --dts --clean",
+    "prepublishOnly": "pnpm build",
+    "watch": "esno watch src/index.ts",
+    "release": "release-it",
+    "test": "echo this is a test text,please modify it"
+  },
+  "devDependencies": {
+    "@left0ver/eslint-config-react": "^0.0.2",
+    "@types/node": "^18.11.18",
+    "eslint": "^8.31.0",
+    "esno": "^0.16.3",
+    "release-it": "^15.6.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  }
+}

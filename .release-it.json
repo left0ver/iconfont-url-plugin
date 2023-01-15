@@ -1,0 +1,20 @@
+{
+  "git": {
+    "requireBranch": "main",
+    "commitMessage": "chore(release): release v${version}",
+    "tag": true,
+    "tagName":"v${version}",
+    "requireUpstream": false,
+    "requireCommits": true
+  },
+  "hooks": {
+    "before:init": ["git pull", "pnpm build"]
+  },
+  "github": {
+    "release": false,
+    "releaseName": "v${version}"
+  },
+  "npm": {
+    "publish": true
+  }
+}
