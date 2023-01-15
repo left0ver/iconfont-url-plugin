@@ -1,17 +1,17 @@
 {
-  "name": "pkg-name",
-  "type": "module",
+  "name": "iconfont-url-plugin",
+  "type": "commonjs",
   "version": "0.0.0",
   "description": "",
   "sideEffect": false,
   "author": "left0ver",
   "license": "MIT",
-  "homepage": "https://github.com/left0ver/pkg-name#readme",
+  "homepage": "https://github.com/left0ver/webpack-iconfont-url-plugin#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/left0ver/pkg-name.git"
+    "url": "git+https://github.com/left0ver/webpack-iconfont-url-plugin.git"
   },
-  "bugs": "https://github.com/left0ver/pkg-name/issues",
+  "bugs": "https://github.com/left0ver/webpack-iconfont-url-plugin/issues",
   "keywords": [],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -36,17 +36,25 @@
     "typecheck": "tsc --noEmit",
     "build": "npx tsup src/index.ts --format cjs,esm --dts --clean",
     "prepublishOnly": "pnpm build",
-    "watch": "esno watch src/index.ts",
-    "release": "release-it",
-    "test": "echo this is a test text,please modify it"
+    "release": "release-it"
+  },
+  "peerDependencies": {
+    "html-webpack-plugin": "> 5.0.0",
+    "webpack": "> 5.0.0"
+  },
+  "dependencies": {
+    "iconfont-url": "^0.0.2"
   },
   "devDependencies": {
-    "@left0ver/eslint-config-react": "^0.0.2",
+    "@left0ver/eslint-config-ts": "^0.0.2",
     "@types/node": "^18.11.18",
     "eslint": "^8.31.0",
     "esno": "^0.16.3",
+    "html-webpack-plugin": "^5.5.0",
     "release-it": "^15.6.0",
     "tsup": "^6.5.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
