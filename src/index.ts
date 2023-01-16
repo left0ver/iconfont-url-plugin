@@ -67,7 +67,7 @@ class IconfontUrlPlugin implements WebpackPluginInstance {
         tagName: 'script',
         voidTag: false,
         meta: { plugin: 'icon-font-url-plugin' },
-        attributes: { type: 'text/javascript', src: js_file, crossorigin: true },
+        attributes: { defer: true, type: 'text/javascript', src: js_file, crossorigin: true },
       }
       const styleAssetTag: HtmlTagObject = {
         tagName: 'link',
@@ -78,6 +78,7 @@ class IconfontUrlPlugin implements WebpackPluginInstance {
       const insertTag: HtmlTagObject = fileType === 'js'
         ? scriptAssetTag
         : styleAssetTag
+      console.log(data.assetTags.scripts)
 
       data.assetTags.scripts.unshift(insertTag)
     }
