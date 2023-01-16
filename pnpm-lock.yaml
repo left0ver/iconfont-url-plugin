@@ -9,14 +9,14 @@ importers:
       eslint: ^8.31.0
       esno: ^0.16.3
       html-webpack-plugin: ^5.5.0
-      iconfont-url: ^0.0.2
+      iconfont-url: ^0.0.3
       release-it: ^15.6.0
       tsup: ^6.5.0
       typescript: ^4.9.4
       webpack: ^5.75.0
       webpack-cli: ^5.0.1
     dependencies:
-      iconfont-url: 0.0.2
+      iconfont-url: 0.0.3
     devDependencies:
       '@left0ver/eslint-config-ts': 0.0.2_iukboom6ndih5an6iafl45j2fe
       '@types/node': 18.11.18
@@ -447,16 +447,6 @@ packages:
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
-
-  /@types/lodash.pick/4.4.7:
-    resolution: {integrity: sha512-HgdyKz7/1+oeoVzbpu1XiX/Bti9AUksHtOILH38T07aKvqoirzcdOsrO2+Yg3L51Hv/8m1MetvHZEUGeABiTiQ==}
-    dependencies:
-      '@types/lodash': 4.14.191
-    dev: false
-
-  /@types/lodash/4.14.191:
-    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
-    dev: false
 
   /@types/mdast/3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
@@ -2825,10 +2815,9 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: true
 
-  /iconfont-url/0.0.2:
-    resolution: {integrity: sha512-CFDtJe4ppKBmDFNqyDvuXDOuqyQT9u4OMJeafNfepnJZSlr6g34xIypLeJgS+qhTg6AHByJOrTA5ja66RaWpYQ==}
+  /iconfont-url/0.0.3:
+    resolution: {integrity: sha512-hfPedNqOsLVPJKhSR3cXQpHgV/FBtr9xH89CsSdqrdVGfH4g2LaRS9+vVneDh4TwgMExyM780djfSWB/atKibQ==}
     dependencies:
-      '@types/lodash.pick': 4.4.7
       axios: 1.2.2
       lodash.pick: 4.4.0
     transitivePeerDependencies:
