@@ -12,7 +12,11 @@
     "url": "git+https://github.com/left0ver/webpack-iconfont-url-plugin.git"
   },
   "bugs": "https://github.com/left0ver/webpack-iconfont-url-plugin/issues",
-  "keywords": [],
+  "keywords": [
+    "iconfont",
+    "iconfont-url",
+    "iconfont-url-plugin"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
