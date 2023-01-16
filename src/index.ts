@@ -7,7 +7,7 @@ declare namespace IconfontUrlPlugin {
   interface options {
     projectName: string
     cookie: string
-    fileType?: 'js' | 'css'
+    fileType: 'js' | 'css'
   }
 }
 interface HtmlWebpackPluginData {
@@ -47,7 +47,7 @@ class IconfontUrlPlugin implements WebpackPluginInstance {
   }
 
   private async addIconFontUrlTag(data: HtmlWebpackPluginData, options: IconfontUrlPlugin.options) {
-    const { projectName, cookie, fileType = 'js' } = options
+    const { projectName, cookie, fileType } = options
     if (fileType !== 'js' && fileType !== 'css') {
       throw new Error('fileType field is required and must be one of [\'css\',\'js\']')
     }
@@ -78,7 +78,6 @@ class IconfontUrlPlugin implements WebpackPluginInstance {
       const insertTag: HtmlTagObject = fileType === 'js'
         ? scriptAssetTag
         : styleAssetTag
-      console.log(data.assetTags.scripts)
 
       data.assetTags.scripts.unshift(insertTag)
     }
