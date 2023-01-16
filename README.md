@@ -50,6 +50,10 @@ pnpm add iconfont-url-plugin -D
   - value: js | css
   - description: iconfont 中的有 3 种方式引入字体图标,详情请看[字体图标使用](https://www.iconfont.cn/help/detail?spm=a313x.7781069.1998910419.d8cf4382a&helptype=code),如果你使用 `font-class` 引用字体图标,则需引入对应的 css 文件,此时 fileType 应设置为 css,如果使用 symbol 引用,则此时 fileType 应设置为 js
 
+
+# :necktie: Related project
+
+- [iconfont-url](https://github.com/left0ver/iconfont-url)
 # :sparkles: LICENSE
 
 [MIT](./LICENSE)
