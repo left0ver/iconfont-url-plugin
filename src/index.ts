@@ -28,15 +28,17 @@ class IconfontUrlPlugin implements WebpackPluginInstance {
     this.options = options
   }
 
-  private extractHtmlWebpackPluginModule = (
+  private getHtmlWebpackPlugin = (
     compiler: Compiler,
   ): typeof HtmlWebpackPluginInstance | null => {
     const htmlWebpackPlugin = (compiler.options.plugins || []).find((plugin) => {
       return plugin.constructor.name === 'HtmlWebpackPlugin'
     }) as typeof HtmlWebpackPluginInstance | undefined
+
     if (!htmlWebpackPlugin) {
       return null
     }
+
     const HtmlWebpackPlugin = htmlWebpackPlugin.constructor
     if (!HtmlWebpackPlugin || !('getHooks' in HtmlWebpackPlugin)) {
       return null
@@ -86,7 +88,7 @@ class IconfontUrlPlugin implements WebpackPluginInstance {
   apply(compiler: Compiler) {
     const pluginName = IconfontUrlPlugin.name
     compiler.hooks.compilation.tap(pluginName, (compilation: Compilation) => {
-      const HtmlWebpackPlugin = this.extractHtmlWebpackPluginModule(compiler)
+      const HtmlWebpackPlugin = this.getHtmlWebpackPlugin(compiler)
 
       if (!HtmlWebpackPlugin) {
         throw new Error(`${pluginName} needs to be used with html-webpack-plugin`)
