@@ -1,8 +1,8 @@
 {
   "name": "iconfont-url-plugin",
-  "type": "commonjs",
+  "type": "module",
   "version": "0.0.0",
-  "description": "",
+  "description": "一个获取 iconfont 的在线链接并将对应的 html 标签自动注入到生成的 html 中",
   "sideEffect": false,
   "author": "left0ver",
   "license": "MIT",
