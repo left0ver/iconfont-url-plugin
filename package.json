@@ -47,7 +47,7 @@
     "webpack": "> 5.0.0"
   },
   "dependencies": {
-    "iconfont-url": "^0.0.3"
+    "iconfont-url": "^0.0.4"
   },
   "devDependencies": {
     "@left0ver/eslint-config-ts": "^0.0.2",
