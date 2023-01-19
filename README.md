@@ -13,14 +13,14 @@
 
 ```shell
 # npm
-npm i iconfont-url-plugin -D
+npm i html-webpack-plugin iconfont-url-plugin -D
 
 # yarn
 
-yarn add iconfont-url-plugin -D
+yarn add html-webpack-plugin iconfont-url-plugin -D
 
 # pnpm
-pnpm add iconfont-url-plugin -D
+pnpm add html-webpack-plugin iconfont-url-plugin -D
 
 ```
 
