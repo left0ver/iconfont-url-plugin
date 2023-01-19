@@ -6,12 +6,12 @@
   "sideEffect": false,
   "author": "left0ver",
   "license": "MIT",
-  "homepage": "https://github.com/left0ver/webpack-iconfont-url-plugin#readme",
+  "homepage": "https://github.com/left0ver/iconfont-url-plugin#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/left0ver/webpack-iconfont-url-plugin.git"
+    "url": "git+https://github.com/left0ver/iconfont-url-plugin.git"
   },
-  "bugs": "https://github.com/left0ver/webpack-iconfont-url-plugin/issues",
+  "bugs": "https://github.com/left0ver/iconfont-url-plugin/issues",
   "keywords": [
     "iconfont",
     "iconfont-url",
