@@ -1,6 +1,7 @@
 <div align="center">
 <img src='https://img.shields.io/github/actions/workflow/status/left0ver/iconfont-url-plugin/ci.yml?branch=main'/>
 <img src='https://img.shields.io/npm/v/iconfont-url-plugin'/>
+<img src='https://leftover-md.oss-cn-guangzhou.aliyuncs.com/img-md/iconfont-url-plugin-2023-01-23.gif'/>
 </div>
 
 # :tada: iconfont-url-plugin
@@ -67,4 +68,4 @@ pnpm add html-webpack-plugin iconfont-url-plugin -D
 - [iconfont-url](https://github.com/left0ver/iconfont-url)
 # :sparkles: LICENSE
 
-[MIT](./LICENSE)
+[MIT](./LICENSE) by [left0ver](https://github.com/left0ver) with 2023
