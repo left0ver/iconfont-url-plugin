@@ -19,4 +19,5 @@ export default defineConfig({
       js: '.cjs',
     }
   },
+  onSuccess: 'pnpm lint:fix',
 })
