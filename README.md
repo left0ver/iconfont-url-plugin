@@ -1,7 +1,7 @@
 <div align="center">
 <img src='https://img.shields.io/github/actions/workflow/status/left0ver/iconfont-url-plugin/ci.yml?branch=main'/>
 <img src='https://img.shields.io/npm/v/iconfont-url-plugin'/>
-<img src='https://leftover-md.oss-cn-guangzhou.aliyuncs.com/img-md/iconfont-url-plugin-2023-01-23.gif'/>
+<img src='https://leftover-md.oss-cn-guangzhou.aliyuncs.com/img-md/iconfont-url-plugin1-2023-01-23.gif'/>
 </div>
 
 # :tada: iconfont-url-plugin
