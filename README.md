@@ -9,6 +9,10 @@
 
 > 该项目建议只用于个人项目, cookie 等隐私数据建议使用环境变量的方式注入,并且不要直接上传到 GitHub 等平台,以免造成不必要的麻烦
 
+
+# :wrench: compatibility
+支持webpack4 和 webpack5
+
 # :key: Install
 
 ```shell
@@ -33,6 +37,8 @@ pnpm add html-webpack-plugin iconfont-url-plugin -D
   //.... other plugin
     new HtmlWebpackPlugin(),
     new IconfontUrlPlugin({ projectName: 'your iconfont project name', cookie: 'your cookie',fileType:"js" }),
+    //will inject following content in html 
+    // <script defer="defer" src="your latest online iconfont url" crossorigin></script>
   ],
 
 ```
