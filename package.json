@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@left0ver/eslint-config-ts": "^0.0.2",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.0.0",
     "eslint": "^8.31.0",
     "esno": "^0.16.3",
     "html-webpack-plugin": "^5.5.0",

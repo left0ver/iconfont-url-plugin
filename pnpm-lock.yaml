@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@left0ver/eslint-config-ts': ^0.0.2
-      '@types/node': ^18.11.18
+      '@types/node': ^20.0.0
       eslint: ^8.31.0
       esno: ^0.16.3
       html-webpack-plugin: ^5.5.0
@@ -19,7 +19,7 @@ importers:
       iconfont-url: 0.0.4
     devDependencies:
       '@left0ver/eslint-config-ts': 0.0.2_kvhumnresjtcflasshbz76q27a
-      '@types/node': 18.11.18
+      '@types/node': 20.8.8
       eslint: 8.31.0
       esno: 0.16.3
       html-webpack-plugin: 5.5.0_webpack@5.75.0
@@ -454,8 +454,10 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node/18.11.18:
-    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+  /@types/node/20.8.8:
+    resolution: {integrity: sha512-YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==}
+    dependencies:
+      undici-types: 5.25.3
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -3234,7 +3236,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.11.18
+      '@types/node': 20.8.8
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -4844,6 +4846,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: true
+
+  /undici-types/5.25.3:
+    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
     dev: true
 
   /unique-string/3.0.0:
